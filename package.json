@@ -1,0 +1,30 @@
+{
+  "name": "freecodecamp-backend-algorithms",
+  "version": "1.0.0",
+  "description": "Production-grade implementation of freeCodeCamp Back End Development & Scientific Computing certifications: 5 REST microservices and 5 algorithmic engineering suites with automated test coverage and interactive edge playground.",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "tsx --test tests/**/*.test.ts"
+  },
+  "keywords": [
+    "freecodecamp",
+    "backend",
+    "microservices",
+    "algorithms",
+    "rest-api",
+    "typescript",
+    "cloudflare-pages",
+    "node-test"
+  ],
+  "author": "DyharL <249640645+DyharL@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
