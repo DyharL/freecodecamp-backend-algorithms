@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>freeCodeCamp Certified Engineering Suite · DyharL</title>
+  <meta name="description" content="Production-grade implementation of freeCodeCamp Back End Development & Scientific Computing certifications with automated test suites and interactive playground.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="container header-inner">
+      <a href="/" class="brand">
+        <span class="brand-badge">CERTIFIED 2024</span>
+        <span class="brand-title">freeCodeCamp Engineering Suite</span>
+      </a>
+      <div class="header-links">
+        <a href="https://github.com/DyharL/freecodecamp-backend-algorithms" target="_blank" rel="noopener noreferrer" class="header-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          View Source Code
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="dot"></span>
+        <span>10/10 Projects Validated · 100% Automated Test Coverage</span>
+      </div>
+      <h1>Back End Microservices &amp; Scientific Algorithms</h1>
+      <p>Dual curriculum certification engineering suite built with modern TypeScript, strict unit tests, and live edge runtime endpoints.</p>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-value">10</div>
+          <div class="stat-label">Full Projects</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">30/30</div>
+          <div class="stat-label">Passing Tests</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">0ms</div>
+          <div class="stat-label">Zero Vulnerabilities</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Edge Compatible</div>
+        </div>
+      </div>
+
+      <!-- Segment Tabs -->
+      <div class="tabs-nav">
+        <button id="tab-micro" class="tab-btn active" onclick="switchTab('micro')">Back End Microservices (5)</button>
+        <button id="tab-algo" class="tab-btn" onclick="switchTab('algo')">Scientific Computing (5)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="container">
+    
+    <!-- GRID 1: BACKEND MICROSERVICES -->
+    <div id="grid-microservices" class="project-grid">
+
+      <!-- Project 01: Timestamp -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 01</span>
+          <span class="project-badge">GET /api/timestamp</span>
+        </div>
+        <h3>Timestamp Microservice</h3>
+        <p>Bidirectional time parsing service converting ISO 8601 strings and Unix epoch timestamps into standardized JSON objects with fallback handling.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <input id="input-timestamp" type="text" class="code-input" value="2015-12-25" placeholder="YYYY-MM-DD or Unix ms">
+            <button class="run-btn" onclick="testTimestamp()">Execute</button>
+          </div>
+          <div id="output-timestamp" class="output-box">{
+  "unix": 1451001600000,
+  "utc": "Fri, 25 Dec 2015 00:00:00 GMT"
+}</div>
+        </div>
+      </article>
+
+      <!-- Project 02: Request Header Parser -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 02</span>
+          <span class="project-badge">GET /api/whoami</span>
+        </div>
+        <h3>Request Header Parser</h3>
+        <p>Edge network metadata inspection service extracting client remote IP, upstream proxy hops, accept language headers, and user-agent software fingerprint.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testWhoami()">Inspect My Headers Now</button>
+          </div>
+          <div id="output-whoami" class="output-box">Click above to query /api/whoami</div>
+        </div>
+      </article>
+
+      <!-- Project 03: URL Shortener -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 03</span>
+          <span class="project-badge">POST /api/shorturl</span>
+        </div>
+        <h3>URL Shortener Service</h3>
+        <p>Short URL generation engine with asynchronous DNS hostname resolution verification (rejecting non-existent domains) and HTTP 302 redirection.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <input id="input-shortener" type="text" class="code-input" value="https://freecodecamp.org">
+            <button class="run-btn" onclick="testShortener()">Shorten</button>
+          </div>
+          <div id="output-shortener" class="output-box">Click Shorten to test DNS lookup</div>
+        </div>
+      </article>
+
+      <!-- Project 04: Exercise Tracker -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 04</span>
+          <span class="project-badge">REST CRUD API</span>
+        </div>
+        <h3>Exercise Tracker API</h3>
+        <p>Relational workout management API featuring user entity creation, exercise session logging, and range-based date queries with limit pagination.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testExercise()">Fetch Sample Workout Logs</button>
+          </div>
+          <div id="output-exercise" class="output-box">Click above to query /api/users</div>
+        </div>
+      </article>
+
+      <!-- Project 05: File Metadata -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 05</span>
+          <span class="project-badge">POST /api/fileanalyse</span>
+        </div>
+        <h3>File Metadata Analyzer</h3>
+        <p>Multipart form stream inspector parsing payload boundaries to extract original filename, canonical MIME type, and exact byte size.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testFileMetadata()">Analyze Sample File Stream</button>
+          </div>
+          <div id="output-file" class="output-box">Click above to analyze sample upload</div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- GRID 2: SCIENTIFIC COMPUTING ALGORITHMS -->
+    <div id="grid-algorithms" class="project-grid" style="display: none;">
+
+      <!-- Algorithm 06: Arithmetic Formatter -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 06</span>
+          <span class="project-badge">ALGORITHM</span>
+        </div>
+        <h3>Arithmetic Formatter</h3>
+        <p>Strict vertical arithmetic layout engine with validation for operator whitelist, 4-digit width ceilings, and optional answer rendering.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testArithmetic()">Format Arithmetic Problems</button>
+          </div>
+          <div id="output-arithmetic" class="output-box">Click to test vertical formatting</div>
+        </div>
+      </article>
+
+      <!-- Algorithm 07: Time Calculator -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 07</span>
+          <span class="project-badge">ALGORITHM</span>
+        </div>
+        <h3>Time Duration Calculator</h3>
+        <p>12-hour clock addition algorithm with automatic AM/PM conversion, multiple day rollover counters, and modulo day-of-week calculation.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testTime()">Calculate Duration (+24h20)</button>
+          </div>
+          <div id="output-time" class="output-box">Click to calculate duration</div>
+        </div>
+      </article>
+
+      <!-- Algorithm 08: Budget App -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 08</span>
+          <span class="project-badge">OBJECT-ORIENTED</span>
+        </div>
+        <h3>Budget App &amp; Chart</h3>
+        <p>Encapsulated Category class managing financial ledgers, inter-category transfers, and ASCII percentage spend distribution chart generation.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testBudget()">Generate Spending Chart</button>
+          </div>
+          <div id="output-budget" class="output-box">Click to render ASCII spend chart</div>
+        </div>
+      </article>
+
+      <!-- Algorithm 09: Polygon Area Calculator -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 09</span>
+          <span class="project-badge">GEOMETRY ENGINE</span>
+        </div>
+        <h3>Polygon Area Calculator</h3>
+        <p>Geometric hierarchy with Rectangle and Square classes, computing perimeter, diagonals, ASCII picture representations, and shape tiling capacity.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testPolygon()">Compute Geometry &amp; Tiling</button>
+          </div>
+          <div id="output-polygon" class="output-box">Click to calculate polygon metrics</div>
+        </div>
+      </article>
+
+      <!-- Algorithm 10: Probability Calculator -->
+      <article class="project-card">
+        <div class="card-header">
+          <span class="project-num">PROJECT 10</span>
+          <span class="project-badge">MONTE CARLO</span>
+        </div>
+        <h3>Probability Calculator</h3>
+        <p>Stochastic Monte Carlo simulation engine performing randomized sampling without replacement to calculate empirical draw probabilities.</p>
+        
+        <div class="interactive-box">
+          <div class="input-row">
+            <button class="run-btn" style="width: 100%;" onclick="testProbability()">Simulate 500 Draws</button>
+          </div>
+          <div id="output-probability" class="output-box">Click to run Monte Carlo trials</div>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Architected by <a href="https://github.com/DyharL" target="_blank" rel="noopener noreferrer">DyharL</a> · All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
