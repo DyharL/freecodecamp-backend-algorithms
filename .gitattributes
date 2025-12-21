@@ -1,3 +1,11 @@
+# Vendored directories
 functions/** linguist-vendored
 dist/** linguist-vendored
-public/** linguist-documentation
+public/** linguist-vendored
+package.json linguist-vendored
+package-lock.json linguist-vendored
+tsconfig.json linguist-vendored
+
+# Detectable
+src/microservices/** linguist-detectable=true
+python/** linguist-detectable=true
