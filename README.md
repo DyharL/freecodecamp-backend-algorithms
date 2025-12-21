@@ -1,13 +1,16 @@
 # freeCodeCamp Certified Engineering Suite
 
-[![Tests](https://img.shields.io/badge/tests-30%2F30%20passing-22c55e?style=flat-square)](https://github.com/DyharL/freecodecamp-backend-algorithms)
-[![Vulnerabilities](https://img.shields.io/badge/vulnerabilities-0-22c55e?style=flat-square)](https://github.com/DyharL/freecodecamp-backend-algorithms)
-[![Node](https://img.shields.io/badge/node-%3E%3D22.0.0-blue?style=flat-square)](https://nodejs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![CI](https://github.com/DyharL/freecodecamp-backend-algorithms/actions/workflows/ci.yml/badge.svg)](https://github.com/DyharL/freecodecamp-backend-algorithms/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776ab.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178c6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-000?logo=cloudflare)](https://freecodecamp-backend-algorithms.pages.dev)
 
-Production-grade engineering implementation of the official **freeCodeCamp Back End Development & APIs** and **Scientific Computing** curricula.
+Production-grade engineering implementation of the official **freeCodeCamp Back End Development & APIs** (Node.js / Express / TypeScript) and **Scientific Computing** (Python 3) curricula.
 
-This repository features **10 fully tested standalone projects** (5 high-throughput REST microservices and 5 algorithmic engineering suites), accompanied by an interactive edge-compatible developer playground.
+This repository features **10 fully tested standalone projects** (5 high-throughput REST microservices in TypeScript and 5 mathematical engineering suites in canonical Python in `python/`), accompanied by an interactive edge-compatible developer playground.
+
+Live Interactive Showcase: [https://freecodecamp-backend-algorithms.pages.dev](https://freecodecamp-backend-algorithms.pages.dev)
 
 ---
 
