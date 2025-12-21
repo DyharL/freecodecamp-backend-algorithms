@@ -6,9 +6,9 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178c6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Cloudflare Pages](https://img.shields.io/badge/Cloudflare_Pages-000?logo=cloudflare)](https://freecodecamp-backend-algorithms.pages.dev)
 
-Production-grade engineering implementation of the official **freeCodeCamp Back End Development & APIs** (Node.js / Express / TypeScript) and **Scientific Computing** (Python 3) curricula.
+Production-grade engineering implementation of the official **freeCodeCamp Back End Development & APIs** and **Scientific Computing** curricula.
 
-This repository features **10 fully tested standalone projects** (5 high-throughput REST microservices in TypeScript and 5 mathematical engineering suites in canonical Python in `python/`), accompanied by an interactive edge-compatible developer playground.
+This repository features **10 fully tested standalone projects** (5 high-throughput REST microservices in TypeScript and 5 mathematical engineering suites in canonical **Python** in `python/`), accompanied by an interactive edge-compatible developer playground.
 
 Live Interactive Showcase: [https://freecodecamp-backend-algorithms.pages.dev](https://freecodecamp-backend-algorithms.pages.dev)
 
