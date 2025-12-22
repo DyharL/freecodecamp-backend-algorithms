@@ -1,5 +1,8 @@
 # freeCodeCamp Certified Engineering Suite
 
+**Curriculum completed: 2023–2024 | Repository initialized: December 2025.**
+
+
 Production implementation of the official **freeCodeCamp Back End Development & APIs** and **Scientific Computing** curricula.
 
 This repository features **10 fully tested standalone projects** (5 REST microservices in Node.js/TypeScript and 5 mathematical engineering suites in canonical **Python** in `python/`), accompanied by an interactive edge-compatible developer playground.
