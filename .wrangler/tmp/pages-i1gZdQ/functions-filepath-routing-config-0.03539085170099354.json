@@ -1,0 +1,53 @@
+{
+  "routes": [
+    {
+      "routePath": "/api/algorithms/:algo",
+      "mountPath": "/api/algorithms",
+      "method": "",
+      "module": [
+        "api/algorithms/[algo].ts:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/shorturl/:id*",
+      "mountPath": "/api/shorturl",
+      "method": "",
+      "module": [
+        "api/shorturl/[[id]].ts:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/timestamp/:date*",
+      "mountPath": "/api/timestamp",
+      "method": "",
+      "module": [
+        "api/timestamp/[[date]].ts:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/fileanalyse",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/fileanalyse.ts:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/users",
+      "mountPath": "/api/users",
+      "method": "",
+      "module": [
+        "api/users/index.ts:onRequest"
+      ]
+    },
+    {
+      "routePath": "/api/whoami",
+      "mountPath": "/api",
+      "method": "",
+      "module": [
+        "api/whoami.ts:onRequest"
+      ]
+    }
+  ],
+  "baseURL": "/"
+}
